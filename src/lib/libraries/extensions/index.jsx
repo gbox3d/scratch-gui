@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import helloIconURL from './hello/hello.png';
+import helloInsetIconURL from './hello/hello-small.png';
+
 export default [
     {
         name: (
@@ -316,6 +319,27 @@ export default [
                 id="gui.extension.gdxfor.connectingMessage"
             />
         ),
+
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Hello"
+                description="Name for the 'Hello' extension"
+                id="gui.extension.hello.name"
+            />
+        ),
+        extensionId: 'hello',
+        iconURL: helloIconURL,
+        insetIconURL: helloInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Returns hello message."
+                description="Description for the 'Hello' extension"
+                id="gui.extension.hello.description"
+            />
+        ),
+        featured: true
     }
 ];
